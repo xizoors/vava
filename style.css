@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playpen+Sans+Arabic:wght@100..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Playpen Sans Arabic", cursive
+}
+body{
+  background: #ecf3ff;
+  position: relative;
+}
+.header{
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 8px #00000031;
+}
+.header .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav .logo{
+  font-family: "Inter", sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #5a96ff;
+}
+.nav .items{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+}
+.items a{
+  text-decoration: none;
+  font-size: 1em;
+  color: #000;
+  transition: all 0.2s;
+}
+.items a:hover , .items a.active{
+  color: #5a96ff;
+}
+.header .head{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.head h1{
+  font-size: 3.5em;
+  margin: 20px 20px 8px 20px;
+}
+h1 span{
+  font-family: "Inter", sans-serif;
+  color: #5a96ff;
+}
+.head p{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.head .btns{
+  margin: 20px 20px 40px;
+}
+.btns .btn1{
+  border: 2px solid #5a96ff;
+  color: #5a96ff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  margin: 0 10px;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.btns .btn1:hover{
+  background: #5a97ff41;
+  scale: 1.02;
+}
+.btns .btn2{
+  border: 2px solid #5a96ff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  margin: 0 10px;
+  background: #5a96ff;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.btns .btn2:hover{
+  background: #2574fc;
+  scale: 1.02;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.body h1{
+  font-size: 2.5em;
+  margin: 20px;
+}
+.body .content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.content .depa{
+  background: #fff;
+  margin: 10px 10px 20px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px #00000031;
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.content .depa:hover{
+  scale: 1.05;
+  background: #488bff;
+  color: #fff;
+}
+.depa .img{
+  margin-bottom: 10px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: #fff;
+  background: #488bff;
+}
+.depa h2{
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+.depa p{
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.depa a{
+  border: 2px solid #5a96ff;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  background: #5a96ff;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+.depa a:hover{
+  background: #2574fc;
+  scale: 1.02;
+}
+.btn-top{
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+}
+.btn-top button{
+  border: none;
+  background: #5a96ff;
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 8px #00000031;
+  display: none;
+  transition: all 0.3s;
+}
+.btn-top button:hover{
+  background: #2574fc;
+  scale: 1.02;
+}
+
+@media (max-width: 400px) {
+  .header .nav{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .head h1{
+    font-size: 3em;
+  }
+  .head p{
+    font-size: 1em;
+  }
+  .btns .btn1{
+    font-size: 1em;
+  }
+  .btns .btn2{
+    font-size: 1em;
+  }
+}

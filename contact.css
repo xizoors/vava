@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playpen+Sans+Arabic:wght@100..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Playpen Sans Arabic", cursive
+}
+body{
+  background: #ecf3ff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.head{
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 8px #00000031;
+  border-radius: 20px;
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.head .nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+.nav .logo{
+  font-family: "Inter", sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #5a96ff;
+}
+.nav .items{
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+}
+.items a{
+  text-decoration: none;
+  font-size: 1em;
+  color: #000;
+  transition: all 0.2s;
+}
+.items a:hover , .items a.active{
+  color: #5a96ff;
+}
+.head .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    margin: 40px;
+}
+.content h1{
+    font-size: 4em;
+}
+.content .links ion-icon{
+    font-size: 2.5em;
+    margin: 20px;
+    background: #5a96ff;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s;
+}
+.content .links ion-icon:hover{
+    background: #2c7aff;
+    scale: 1.02;
+    box-shadow: 0 0 8px #00000031;
+}
+
+@media (max-width: 400px) {
+    .head .content{
+        height: 240px;
+    }   
+    .content h1{
+        font-size: 3em;
+    }
+    .content .links ion-icon{
+        font-size: 1.5em;
+        margin: 5px;
+    }
+}
